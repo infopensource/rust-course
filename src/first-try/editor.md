@@ -36,13 +36,17 @@
 >
 > 在编译器构建代码的同时，不要在终端再运行 `cargo run` 等命令进行编译，不然会获得一个报错提示，大意是当前文件目录已经被锁定，等待其它使用者释放。如果等了很久 IDE 还是没有释放（虽然我没遇到过，但是存在这个可能性），你可以关掉 IDE，并手动 `kill` 掉 `rust-analyzer`，然后重新尝试。
 
+## rust插件整合包
+在vscode的插件商城里已经有人对rust开发的必备插件进行了整合，搜索`Rust Extension Pack`，你会看到两个同名整合包，其中`Swellaby`开发的`Rust Extension Pack`仅整合了rust开发的最少插件（3个），`Zerotask`开发的`Rust Extension Pack`则整合了更多rust开发中的常用插件，各位可以按照自己的需要进行选择。
+
 ## 安装其它好用的插件
 
 在此，再推荐大家几个好用的插件：
 
 1. `Even Better TOML`，支持 .toml 文件完整特性
-2. `Error Lens`, 更好的获得错误展示
-3. `One Dark Pro`, 非常好看的 VSCode 主题
-4. `CodeLLDB`, Debugger 程序
+2. `cargos`, 帮助管理第三方crates的版本
+3. `Error Lens`, 更好的获得错误展示
+4. `One Dark Pro`, 非常好看的 VSCode 主题
+5. `CodeLLDB`, Debugger 程序
 
 好了，至此，VSCode 的配置就已经全部结束，是不是很简单？下面让我们来用 `Cargo` 创建一个 Rust 项目，然后用 VSCode 打开。
